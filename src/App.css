@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
+/* Header */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  width: 100vw;
+  height: 55px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #f55a5a;
   color: white;
+  font-family: helvetica;
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+#globe {
+  height:50%;
+  margin-right: 10px;
+  fill: white;
+  width: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Card */
+
+.card_container {
+  width: 550px;
+  margin: 50px auto;
+  display: flex;
 }
+
+.image_container {
+  background-color: rgba(0,0,0,.2);
+  min-height: 168px;
+  min-width: 150px;
+  border-radius: 5px;
+  margin-right: 50px;
+  box-shadow: 0px 0px 10px gray;
+}
+
+.image {
+  display: block;
+  min-height: 168px;
+  min-width: 150px;
+  border-radius: 5px;
+  margin-right: 50px;
+}
+
+.location_container {
+  display: flex;
+  align-items: center;
+}
+
+.pin {
+  height: 17px;
+  width: auto;
+  fill: #f55a5a;
+  margin-right: 2px;
+}
+
+.country {
+  margin-right: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.maps_link {
+  color: gray;
+  text-decoration: underline;
+  font-size: 12px;
+}
+
+.destination {
+  font-size: 25px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.dates {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-family: helvetica;
+  font-size: 12px;
+}
+
